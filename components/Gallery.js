@@ -3,14 +3,13 @@ import { useRef, useState } from "react";
 import { Plus, ArrowRight, ArrowLeft, HelpCircle } from "lucide-react";
 import { BiGridVertical } from "react-icons/bi";
 import Carousel from "./Carousel";
+import pizza from "@/public/pizza.jpg";
+import pizza2 from "@/public/pizza2.jpg";
+import pizza3 from "@/public/pizza3.jpg";
+import pizza4 from "@/public/pizza4.jpg";
 
 export default function Gallery() {
-  const [images, setImages] = useState([
-    "/pizza.jpg",
-    "/pizza2.jpg",
-    "/pizza3.jpg",
-    "/pizza4.jpg",
-  ]);
+  const [images, setImages] = useState([pizza, pizza2, pizza3, pizza4]);
 
   const fileInputRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +42,7 @@ export default function Gallery() {
   };
 
   return (
-    <div className="bg-[#363c43] rounded-2xl p-6 px-10 shadow-lg w-full relative">
+    <div className="bg-[#363c43] rounded-2xl p-6 px-10 shadow-lg w-full h-full relative overflow-hidden">
       <button className="absolute top-4 left-2 text-gray-500 hover:text-white transition-colors">
         <HelpCircle size={22} />
       </button>
