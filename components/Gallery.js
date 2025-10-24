@@ -3,10 +3,10 @@ import { useRef, useState } from "react";
 import { Plus, ArrowRight, ArrowLeft, HelpCircle } from "lucide-react";
 import { BiGridVertical } from "react-icons/bi";
 import Carousel from "./Carousel";
-import pizza from "@/public/pizza.jpg";
-import pizza2 from "@/public/pizza2.jpg";
-import pizza3 from "@/public/pizza3.jpg";
-import pizza4 from "@/public/pizza4.jpg";
+import pizza from "../public/pizza.jpg";
+import pizza2 from "../public/pizza2.jpg";
+import pizza3 from "../public/pizza3.jpg";
+import pizza4 from "../public/pizza4.jpg";
 
 export default function Gallery() {
   const [images, setImages] = useState([pizza, pizza2, pizza3, pizza4]);
